@@ -13,6 +13,11 @@ import * as SecureStore from "expo-secure-store";
 import Attendanceinfo from "./src/screens/Attendanceinfo";
 import { LoaderProvider, useLoader } from "./src/context/LoaderContext";
 import Loader from "./src/components/Loader";
+import AppealLeave from "./src/screens/AppealLeave";
+import LeaveAppeals from "./src/screens/BrowseLeaveAppeals";
+import CreateNotice from "./src/screens/CreateNotice";
+import PreviousNotices from "./src/screens/PreviousNotices";
+
 import {
   useFonts,
   Poppins_800ExtraBold,
@@ -121,12 +126,55 @@ const AppContent = () => {
               headerShown: false,
             }}
           />
-
           <Stack.Screen
             name="Attendancerecord"
             component={AttendanceRecord}
             options={{
               title: "Attendance record",
+              headerStyle: {
+                backgroundColor: colors.primary,
+              },
+              headerTintColor: colors.white,
+            }}
+          />
+          <Stack.Screen
+            name="CreateNotice"
+            component={CreateNotice}
+            options={{
+              title: "Create Notice",
+              headerStyle: {
+                backgroundColor: colors.primary,
+              },
+              headerTintColor: colors.white,
+            }}
+          />
+          <Stack.Screen
+            name="PreviousNotices"
+            component={PreviousNotices}
+            options={{
+              title: "Previous Notices",
+              headerStyle: {
+                backgroundColor: colors.primary,
+              },
+              headerTintColor: colors.white,
+            }}
+          />
+          <Stack.Screen
+            name="BrowseLeaveAppeals"
+            component={LeaveAppeals}
+            options={{
+              title: "Leave Appeals",
+              headerStyle: {
+                backgroundColor: colors.primary,
+              },
+              headerTintColor: colors.white,
+            }}
+          />
+          <Stack.Screen
+            name="AppealLeave"
+            component={AppealLeave}
+            options={{
+              title: "Appeal leave",
               headerStyle: {
                 backgroundColor: colors.primary,
               },

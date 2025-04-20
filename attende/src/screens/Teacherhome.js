@@ -57,7 +57,7 @@ export default function Teacherhome({ navigation }) {
           navigation={navigation}
           path="Attendancerecord"
         />
-        {/* <NavItem
+        <NavItem
           img={require("../../assets/plus.png")}
           title="Create notice"
           navigation={navigation}
@@ -74,7 +74,7 @@ export default function Teacherhome({ navigation }) {
           title="Browse leave appeals"
           navigation={navigation}
           path="BrowseLeaveAppeals"
-        /> */}
+        />
       </View>
 
       <Logout navigation={navigation} />

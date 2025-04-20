@@ -68,7 +68,7 @@ export default function Studenthome({ navigation }) {
           path="Studentinfo"
           routeParams={{ student }}
         />
-        {/* <NavItem
+        <NavItem
           img={require("../../assets/paper.png")}
           title="Browse notices"
           navigation={navigation}
@@ -79,7 +79,7 @@ export default function Studenthome({ navigation }) {
           title="Appeal leave"
           navigation={navigation}
           path="AppealLeave"
-        /> */}
+        />
       </View>
 
       <Logout navigation={navigation} />
